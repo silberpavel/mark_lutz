@@ -41,10 +41,22 @@ PAY, bob[PAY]
 # (2, 10000)
 
 
-bob = [['name', 'Bob Smith'], ['age', 42], ['pay', 10000]]
-sue = [['name', 'Sue Jones'], ['age', 45], ['pay', 20000]]
-people = [bob, sue]
+
+
+for person in people:
+    print(person[0][1], person[2][1]) # имя, оклад
+# Bob Smith 10000
+# Sue Jones 20000
+
+[person[0][1] for person in people] # выборка имен
+# [‘Bob Smith’, ‘Sue Jones’]
 
 for person in people:
     for (name, value) in person:
         if name == 'name': print(value) # поиск требуемого поля
+
+'''Еще лучше было бы реализовать функцию, выполняющую всю работу за нас:'''
+def field(record, label):
+    for (fname, fvalue) in record:
+        if fname == label:              # поиск поля по имени
+        return fvalue
