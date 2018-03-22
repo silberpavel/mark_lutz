@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # Lists Списки
 bob = ['Bob Smith', 42, 30000, 'software']
 sue = ['Sue Jones', 45, 40000, 'hardware']
@@ -28,7 +30,7 @@ for person in people:
 
 '''Для добавления новых записей в базу данных вполне достаточно ис-
 пользовать обычные операции над списками, такие как append и extend:'''
-people.append([‘Tom’, 50, 0, None])
+people.append(['Tom', 50, 0, None])
 len(people)
 # 3
 people[-1][0]
