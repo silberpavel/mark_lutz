@@ -13,6 +13,6 @@ r = re.findall(r'\d{1,2}\-\d{1,2}\-\d{4}', s)
 
 print(r)
 
-g = re.findall(r'\d{1,2}\-\d{1,2}\-(\d{4})', s)
+g = re.findall(r'\d{1,2}\-\d{1,2}\-(\d{4})', s)   # ГРУПИРОВКА
 
 print(g)
